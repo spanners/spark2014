@@ -1611,6 +1611,8 @@ package body Flow is
                      Analysis.Find_Unwritten_Exports (FA);
                      Analysis.Find_Ineffective_Imports_And_Unused_Objects (FA);
                      Analysis.Find_Ineffective_Statements (FA);
+                     --  ??? [U121-019] put this here?
+                     Analysis.Find_Stable_Elements (FA);
                      Analysis.Find_Dead_Code (FA);
                      Analysis.Check_Depends_Contract (FA);
                   end if;
